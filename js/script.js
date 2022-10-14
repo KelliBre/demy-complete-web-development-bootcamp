@@ -7,7 +7,7 @@ let myName = prompt("What is your name?");
 let nameLength = myName.length;
 console.log(nameLength);
 
-*/
+
 //twitter challange
 let userInput = prompt("Enter your Tweet");
 let charLength = userInput.length;
@@ -19,6 +19,14 @@ console.log(charCutOff);
 
 
 console.log(remainingChar);
-
+*/
 //section 
 
+let userName = prompt("What is your name?");
+// console.log(nameLength);
+let firstLetter = userName.slice(0,1);
+let nameLength = userName.length;
+let remainingChar = userName.slice(1,nameLength);
+userName = firstLetter.toUpperCase() + remainingChar.toLowerCase();
+alert("Hello " + userName + "!!!")
+console.log(userName);
